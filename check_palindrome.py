@@ -17,3 +17,10 @@ elif choice == 'f':
         print(f"Unable to process file at {filepath}")
 else:
     print("Invalid choice")
+
+try:
+    file = input("Enter filepath for palindrome check: ")
+    text = open(file, "r").read()
+    check_palindrome(text)
+except:
+    print(f"Unable to process file at {path}")
